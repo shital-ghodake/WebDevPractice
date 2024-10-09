@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="shital">
+        <meta name="description" content="Forms">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+            <fieldset style="width: 600px; height: 360px;">
+                <legend>Personal Details:</legend>
+                <div>
+                    <label for="Username" >Username: <span class="required">*</span></label>
+                    <input id="Username" type="text" placeholder="please enter your name"  required>
+                </div>
+                <br>
+                <div>
+                    <label for="Password">Password:    *</label>
+                    <input id="Password" type="password" placeholder="enter password"  required>
+                </div>
+            
+
+
+            <br>
+            
+                <div>
+                    <label for="mobile">mobile no:</label>
+                    <input id="mobile" type="tel"  pattern="[0-9]{10}" placeholder="10 digit no" required>
+                </div>
+                <br>
+                <div>
+                    <label for="address">Home Address</label>
+                    <textarea id="address" name="address" rows="3" cols="14" placeholder="Enter Your Full Address"></textarea>
+                </div><br>
+                <div>
+                    <label for="email">Email Id:</label>
+                    <input id="email" type="email" required>
+                </div>
+                <br>
+                <div>
+                   <label for="age">Age:</label>
+                   <input id="age" type="number" min="18" max="49" step="2"> 
+                </div><br>
+                <div>
+                    <label for="Birth">Birth Date:</label>
+                    <input id="Birth" type="date" >
+                </div>
+                <br>
+                <div>
+                    <label>Hobbies:</label><br>
+                    <label for="singing">Singing</label>
+                    <input id="singing" type="checkbox" name="Hobbies">
+                    <label for="dancing">Dancing</label>
+                    <input id="dancing" type="checkbox" name="Hobbies">
+                    <label for drawing>Drawing</label>
+                    <input id="drawing" type="checkbox" name="Hobbies">
+                </div>
+            </fieldset>
+            <br>
+            <fieldset style="width: 600px; height: 290px;">
+                <legend>Educational Details:</legend>
+                <label for="course">courses:</label>
+                <select id="course" name="course">
+                    <optgroup label="computer">
+                        <option>Mca</option>
+                        <option>Msc</option>
+                    </optgroup>
+                    <optgroup label="BusinessGroup">
+                        <option>DS</option>
+                        <option>Mba</option>
+
+                    </optgroup>
+                    
+                </select>
+        
+            <div>
+                <br>
+                <label for="resume">Resume Upload</label>
+                <input id="resume" type="file" name="Resume">
+            </div><br>
+            <div>
+                <label for="search">Search Content</label>
+                <input id="search" type="search" name="content" autocomplete="on">
+            </div>
+            <br>
+            <div>
+                <label for="time">Select Travel Time</label>
+                <input id="time" type="datetime-local" name="traveltime">
+            </div>
+            <br>
+            <div>
+                <label for="weekOfYear">Select week of year</label>
+                <input id="weekOfYear" type="week" name="week">
+            </div>
+            <br>
+            <div>
+                <label for="card">Credit Card Expiry</label>
+                <input id="card" type="month" name="creditCardExpiry">
+            </div>
+            <br>
+            <div>
+                <label>Gender</label><br>
+                <label for="male">Male</label>
+                <input id="male" type="radio" name="gender" value="male" checked>
+
+                <label for="female">female</label>
+                <input id="female" type="radio" name="gender" value="female">
+                <br>
+                <div>
+                    <label for="url">Profile Url</label>
+                    <input id="url" type="url" name="profile">
+                </div>
+                <br>
+                <input type="submit" name="submit">
+            </div>
+            </fieldset>
+
+            
+
+        </form>
+    </body>
+</html>
