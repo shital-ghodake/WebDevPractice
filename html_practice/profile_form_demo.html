@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="shital">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div>
+                <label for="fn">Full name</label>
+                <input id="fn" type="text" name="fullname" required placeholder="Full Name">
+            </div>
+            <div>
+                <lable for="age">Age</lable>
+                <input id="age" type="number" name="age" min="18" max="60"  step="5" 
+                required placeholder="Age between 18 to 60" size="40">
+            </div>
+            <div>
+                <label>hobbies:</label>
+                <input id="hb1" type="checkbox" name="hobbies" value="singing" checked>
+                <label for="hb1">Singing</label>
+                <input id="hb2" type="checkbox" name="hobbies" value="dancing">
+                <label for="hb2">Dancing</label>
+                <input id="hb3" type="checkbox" name="hobbies" value="drawing">
+                <label for="hb3">Drawing</label>
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input id="g1" type="radio" name="gender" value="male">
+                <label for="g1">Male</label>
+                <input id="g2" type="radio" name="=gender" value="female">
+                <label for="g2">Female</label>
+            </div>
+            <div>
+                <label for="bd">Birth Date</label>
+                <input id="bd" type="date" name="birthDate"> 
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <div>
+                <label for="ph">Mobile No.</label>
+                <input  type="tel" name="phoneNo" id="ph" pattern="[0-9]{10}"  placeholder="10 digit mobile no" required>
+            </div>
+            <div>
+                <label for="eml">Email Add</label>
+                <input id="eml" type="email" name="emailAddress" placeholder="abc.xyz@sample.com" required>
+            </div>
+        </fieldset>
+        
+        
+        
+        <div>
+            <label for="dt">Select date between 15-jan-2000 and 31-oct-2024</label>
+            <input id="dt" type="date" name="dateBetween" min="2000-01-15" max="2024-12-20">
+        </div>
+        <div>
+            <label for="tm">Select Travel Time</label>
+            <input id="tm" type="time" name="travelTime">
+        </div>
+        <div>
+            <label for="f">Flight Departure Date and Time</label>
+            <input type="datetime-local" name="flightArrival" id="f" >
+        </div>
+        <div>
+            <label for="wk">Select Week of Year</label>
+            <input id="wk" type="week" name="weekOfYear">
+        </div>
+        <div>
+            <label for="cc"></label>Creadit Card Expiry</label>
+            <input id="cc" type="month" name="creditCardExpiry" max="2028-10">
+        </div>
+        
+        <div>
+            <lable for="res">Upload Resume</lable>
+            <input type="file" name="resume">
+        </div>
+        <div>
+            <label for="sc">Search content</label>
+            <input type="search" name="content" id="sc" >
+        </div>
+        <div>
+            <label for="u">Profile URL</label>
+            <input type="url" name="ProfileUrl" id="u">
+        </div>
+        <div>
+            <label for="ad">Home Address</label>
+            <textarea id="ad" name="homeAddress" rows="5" cols="20" placeholder="enter your home address"></textarea>
+        </div>
+        <div>
+            <label for="qu">Education Qualification</label>
+            <select id="qu" name="Qualification">
+                <option>--Select--</option>
+                <option>B.Sc</option>
+                <option>B.com</option>
+                <option>B.E</option>
+                <option value="MSc">M.Sc</option>
+                <option value="Mcom">M.com</option>
+                <option value="M.E">M.E</option>
+            </select>
+        </div>
+        <div>
+            <label title="Press Control Key" for="sk">Skill</label>
+            <select id="sk" name="skills" multiple size="5">
+                <optgroup label="Web Programming">
+                    <option>HTML</option>
+                    <option>css</option>
+                    <option>JavaScript</option>
+                </optgroup>
+                <optgroup label="Java & Frameworks">
+                    <option>Java</option>
+                    <option>Hibernate JPA</option>
+                    <option>Spring Framework</option>
+                </optgroup>
+                <optgroup label="Dot Net">
+                    <option>C#</option>
+                    <option>ASP.NET</option>
+                </optgroup>
+                <optgroup label="Server Side JS">
+                    <option>NOde js</option>
+                    <option>Express JS</option>
+                </optgroup >
+                <optgroup label="Databases">
+                    <option>MySQL</option>
+                    <option>SQL Server</option>
+                    <option>MongoDB</option>
+                </optgroup>
+                
+             </select>
+        </div>
+        <div>
+            <label for="cf">Favorite Coffee Brand</label>
+            <input id="cf" name="coffee" list="cfbrands">
+            <datalist id="cfbrands">
+                <option value="BRU"></option>
+                <option value="ESPRESSO"></option>
+                <option value="CAFFE MOCHA"></option>
+                <option value="Lavazza"></option>
+                <option value="BRU"></option>
+            </datalist>
+        </div>
+
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+    
+</body>
+</html>
