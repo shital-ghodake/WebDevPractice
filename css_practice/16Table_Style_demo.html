@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table Style Demo</title>
+</head>
+<style>
+    .td{
+        background-color: rgb(255, 127, 180);
+        color: blue;
+    }
+    tr:hover{
+        background-color: red;
+        color: yellowgreen;
+    }
+    .tr{
+        background-color: aqua;
+    }
+    #th{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+
+    }
+    th:hover{
+        background-color: blue;
+        color:white;
+    }
+    .border{
+        color: brown;
+    }
+</style>
+<body>
+    <table border="5">
+        <thead >
+            <tr class="tr">
+                <th id="th">Name</th>
+                <th>Address</th>
+                <th>Mobile No</th>
+            </tr>
+            <tr class="td" >
+                <td id="th">Shital</td>
+                <td>kagal</td>
+                <td>8975821886</td>
+            </tr>
+            <tr class="td">
+                <td id="th">Anushri</td>
+                <td>pune</td>
+                <td>9657560812</td>
+            </tr>
+            <tr class="td">
+                <td id="th">Sayali</td>
+                <td>walva</td>
+                <td>5623560823</td>
+            </tr>
+            <tr class="td">
+                <td id="th">Aarya</td>
+                <td>kolhapur</td>
+                <td>9657560856</td>
+            </tr>
+        
+        </thead>
+    </table>
+</body>
+</html>
