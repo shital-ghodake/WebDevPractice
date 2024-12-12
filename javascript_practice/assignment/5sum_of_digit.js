@@ -23,8 +23,6 @@ num=num.toString()
 var lenOfString = num.length
 for(let i=0;i<lenOfString; i++){
     convrtedInt = parseInt(num[i], 10)
-    console.log(convrtedInt)
-
     sum=sum+convrtedInt
 }
 console.log(sum)

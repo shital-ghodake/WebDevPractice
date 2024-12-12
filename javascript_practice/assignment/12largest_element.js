@@ -1,7 +1,5 @@
 arr = [12,76,43,66,38]
 
-
-
 function maxArray(num){
     max = arr[0]
     for(i=0; i<arr.length; i++){
@@ -13,3 +11,6 @@ function maxArray(num){
     return max
 }
 
+
+var res = maxArray(arr)
+console.log(res)
